@@ -8,7 +8,7 @@ Senha: @Info2019
 USUÁRIO FTP/SSH
 
     USUÁRIO: infolivebr
-    SENHA: InfoLive20
+    SENHA: InfoLive2@
 
 ENDEREÇO FTP
 

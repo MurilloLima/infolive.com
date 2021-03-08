@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dentalle - @yield('title')</title>
+    <title>Infolive - @yield('title')</title>
     <link rel="icon" href="{{ asset('icon.png') }}" type="image/png" sizes="57x57">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="{{ asset('assets/admin/plugins/fontawesome-free/css/all.min.css') }}">
@@ -32,9 +33,9 @@
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
     <div id="loader"></div>
     <div class="wrapper">
-        @include('panel.admin.layouts.nav')
+        @include('panel.user.layouts.nav')
         @yield('content')
-        @include('panel.admin.layouts.footer')
+        @include('panel.layouts.footer')
     </div>
 
 

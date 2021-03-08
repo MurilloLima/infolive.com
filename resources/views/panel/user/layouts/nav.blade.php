@@ -17,11 +17,10 @@
 <!-- /.navbar -->
 
 <!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="main-sidebar sidebar-dark-danger elevation-4">
     <!-- Brand Logo -->
     <a href="{{ route('admin.index') }}" class="brand-link">
-        <img src="{{ asset('assets/admin/img/icon.png') }}" alt="" class="brand-image img-circle elevation-3"
-            style="opacity: .8">
+        <img src="{{ asset('icon.png') }}" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">Dashboard</span>
     </a>
 
@@ -45,7 +44,7 @@
                with font-awesome or any other icon font library -->
                 <li class="nav-item has-treeview menu-open">
                     <a href="{{ route('admin.index') }}"
-                        class="nav-link {{ $activePage == 'admin.index' ? ' active' : '' }}">
+                        class="nav-link {{ $activePage == 'panel.index' ? ' active' : '' }}">
                         <i class="nav-icon fas fa-home"></i>
                         <p>
                             Home
@@ -53,25 +52,59 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('agenda.index') }}"
-                        class="nav-link {{ $activePage == 'agenda.index' ? ' active' : '' }}">
+                    <a href="{{ route('evento.index') }}"
+                        class="nav-link {{ $activePage == 'evento.index' ? ' active' : '' }}">
                         <i class="nav-icon fa fa-list-alt"></i>
                         <p>
-                            Agendamentos
+                            O evento
                         </p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('clientes.index') }}"
-                        class="nav-link {{ $activePage == 'clientes.index' ? ' active' : '' }}">
-                        <i class="nav-icon fa fa-users"></i>
+                    <a href="{{ route('panel.user.transmissao') }}"
+                        class="nav-link {{ $activePage == 'panel.user.transmissao' ? ' active' : '' }}">
+                        <i class="nav-icon fa fa-video"></i>
                         <p>
-                            Clientes
+                            Transmissão
                         </p>
                     </a>
                 </li>
-           
-              
+                <li class="nav-item">
+                    <a href="{{ route('palestrante.index') }}"
+                        class="nav-link {{ $activePage == 'palestrante.index' ? ' active' : '' }}">
+                        <i class="nav-icon fa fa-users"></i>
+                        <p>
+                            Palestrante
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('enquete.index') }}"
+                        class="nav-link {{ $activePage == 'enquete.index' ? ' active' : '' }}">
+                        <i class="nav-icon fa fa-list-alt"></i>
+                        <p>
+                            Enquete
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('perguntas.index') }}"
+                        class="nav-link {{ $activePage == 'perguntas.index' ? ' active' : '' }}">
+                        <i class="nav-icon fa fa-comment"></i>
+                        <p>
+                            Perguntas
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('chat.index') }}"
+                        class="nav-link {{ $activePage == 'chat.index' ? ' active' : '' }}">
+                        <i class="nav-icon fa fa-chart-area"></i>
+                        <p>
+                            Chat
+                        </p>
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
