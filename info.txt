@@ -1,0 +1,22 @@
+Servidor infolivebrasil.com.br
+https://uolhost.uol.com.br/                                    
+Login: luizgustavo.sales@hotmail.com
+Senha: @Info2019
+
+
+
+USUÁRIO FTP/SSH
+
+    USUÁRIO: infolivebr
+    SENHA: InfoLive20
+
+ENDEREÇO FTP
+
+    ftp.infolivebrasil.com.br
+    ftp.uhserver.com
+
+ENDEREÇO SSH - Configurações
+
+    ssh.infolivebrasil.com.br
+    ssh.uhserver.com
+
