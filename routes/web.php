@@ -1,4 +1,7 @@
 <?php
+Route::get('/', function () {
+    return view('auth.login');
+});
 //routes admin
 Route::group(['prefix' => 'panel', 'middleware' => ['auth']], function () {
     Route::get('/', 'Panel\Admin\HomeController@index')->name('admin.index');
